@@ -6,12 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/std_id"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="45sp"
+            android:textAlignment="center"
+            android:text="ID: 20221445850"
+            />
+
+        <TextView
+            android:id="@+id/gpa"
+            android:textSize="60sp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="GPA: :("
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="144dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="200sp"
+            android:textSize="40sp"
+            android:text="Next" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

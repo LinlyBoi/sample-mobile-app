@@ -6,32 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aly Sewelam"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157"
-        android:textSize="69sp"
-        android:textColor="#0073FF"
-        />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="179dp"
-        android:layout_height="118dp"
-        android:text="Next"
-        android:textColor="#ABCD44"
-        android:textSize="49sp"
-        app:constraintSet="@layout/content_main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Aly Ahmed Megahed"
+            android:textAlignment="center"
+            android:textSize="44sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="288dp"
+            android:layout_height="209dp"
+            android:layout_gravity="center"
+            android:layout_margin="100sp"
+            app:srcCompat="@drawable/pfp"
+            tools:srcCompat="@drawable/pfp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="144dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="150sp"
+            android:textSize="40sp"
+            android:layout_gravity="bottom|center"
+            android:text="Next"
+            android:textAlignment="center" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
